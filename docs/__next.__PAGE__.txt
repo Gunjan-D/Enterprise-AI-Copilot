@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[33796,["/Enterprise-AI-Copilot/_next/static/chunks/da070d0f31fd46f4.js"],"default"]
+3:I[23036,["/Enterprise-AI-Copilot/_next/static/chunks/cbb9eb39c2ac9a61.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"j7RVvdHeCqTw7YtuOazvt","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50","children":["$","$L2",null,{}]}],[["$","script","script-0",{"src":"/Enterprise-AI-Copilot/_next/static/chunks/da070d0f31fd46f4.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
