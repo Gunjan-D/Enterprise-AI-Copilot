@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise AI Copilot - Live Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { text-align: center; max-width: 600px; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .logo { width: 80px; height: 80px; margin: 0 auto 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; position: relative; }
+        .logo::before { content: '🤖'; font-size: 2rem; }
+        h1 { color: #2d3748; margin-bottom: 1rem; font-size: 2.5rem; font-weight: 700; }
+        .subtitle { color: #4a5568; margin-bottom: 2rem; font-size: 1.2rem; }
+        .demo-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 2rem; border: none; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-block; margin: 1rem; }
+        .demo-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem; }
+        .feature { padding: 1.5rem; background: #f7fafc; border-radius: 12px; border-left: 4px solid #667eea; }
+        .feature h3 { color: #2d3748; margin-bottom: 0.5rem; }
+        .feature p { color: #4a5568; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <h1>Enterprise AI Copilot</h1>
+        <p class="subtitle">Microsoft Stack Workflow Automation Platform</p>
+        
+        <p style="color: #4a5568; margin-bottom: 2rem;">
+            Experience our sophisticated AI assistant designed for enterprise workflow automation with Azure OpenAI, Microsoft 365 services, and Power Automate integration.
+        </p>
+        
+        <div style="margin: 2rem 0;">
+            <a href="http://localhost:3000" class="demo-btn">🚀 Access Live Demo (localhost:3000)</a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🤖 AI Chat Interface</h3>
+                <p>Natural language processing for complex workflow requests</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Workflow Automation</h3>
+                <p>Power Automate integration for business process automation</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Analytics Dashboard</h3>
+                <p>Real-time metrics and comprehensive usage insights</p>
+            </div>
+            <div class="feature">
+                <h3>👥 User Management</h3>
+                <p>Enterprise-grade role-based access control</p>
+            </div>
+            <div class="feature">
+                <h3>🔐 Microsoft 365</h3>
+                <p>Seamless integration with Teams, SharePoint, and Outlook</p>
+            </div>
+            <div class="feature">
+                <h3>🎯 Workflow Templates</h3>
+                <p>Pre-built automation templates for common business processes</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+            <p style="color: #718096; font-size: 0.9rem;">
+                <strong>Tech Stack:</strong> Next.js 14, TypeScript, Tailwind CSS, Azure OpenAI, Microsoft Graph API, Power Automate
+            </p>
+            <p style="color: #718096; font-size: 0.9rem; margin-top: 0.5rem;">
+                <strong>Repository:</strong> <a href="https://github.com/Gunjan-D/Enterprise-AI-Copilot" style="color: #667eea;">GitHub.com/Gunjan-D/Enterprise-AI-Copilot</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
