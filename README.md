@@ -4,7 +4,15 @@ A sophisticated Microsoft Stack-powered AI assistant designed for enterprise wor
 
 ## 🚀 Live Demo
 
-Experience the full functionality at `http://localhost:3000` after setup.
+**[🌐 Access Live Demo](https://gunjan-d.github.io/Enterprise-AI-Copilot/)**
+
+Experience the full Enterprise AI Copilot functionality with our interactive demo featuring:
+- Real-time AI chat interface with workflow automation
+- Interactive analytics dashboard with live data visualization
+- Complete user management system with enterprise features
+- Workflow templates and automated process demonstrations
+
+*For local development, the application runs at `http://localhost:3000` after setup.*
 
 ## ✨ Features
 
