@@ -129,63 +129,86 @@ const CopilotDashboard = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Navigation Tabs */}
         <div className="mb-8">
-          <nav className="flex space-x-2">
+          <nav className="flex space-x-4">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               return (
-                <button
+                <motion.button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`group relative flex items-center space-x-3 px-6 py-4 text-sm font-bold rounded-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-2xl ${
+                  whileHover={{ scale: 1.1, y: -5 }}
+                  whileTap={{ scale: 0.95 }}
+                  className={`group relative flex items-center space-x-4 px-8 py-5 text-lg font-extrabold rounded-3xl transition-all duration-700 shadow-2xl border-2 ${
                     activeTab === tab.id
-                      ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 text-white shadow-2xl animate-pulse'
-                      : 'bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 hover:from-blue-500 hover:via-purple-500 hover:to-cyan-500 hover:text-white border-2 border-transparent hover:border-white/30'
+                      ? 'bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white border-white/50 shadow-purple-500/50 animate-pulse'
+                      : 'bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 text-white border-transparent hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500 hover:shadow-pink-500/50'
                   }`}
+                  style={{
+                    boxShadow: activeTab === tab.id 
+                      ? '0 25px 50px -12px rgba(147, 51, 234, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1)' 
+                      : '0 20px 40px -12px rgba(59, 130, 246, 0.4)'
+                  }}
                 >
-                  {/* Animated background glow */}
-                  <div className={`absolute inset-0 rounded-2xl transition-all duration-500 ${
-                    activeTab === tab.id 
-                      ? 'bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 animate-ping' 
-                      : 'opacity-0 group-hover:opacity-100 bg-gradient-to-r from-blue-400/10 via-purple-400/10 to-cyan-400/10'
-                  }`}></div>
-                  
-                  {/* Icon with dynamic effects */}
-                  <div className={`relative z-10 p-2 rounded-xl transition-all duration-500 ${
-                    activeTab === tab.id
-                      ? 'bg-white/20 animate-bounce'
-                      : 'group-hover:bg-white/20 group-hover:animate-pulse'
-                  }`} style={activeTab === tab.id ? {animationDuration: '2s'} : {}}>
-                    <Icon className={`h-5 w-5 transition-all duration-500 ${
-                      activeTab === tab.id 
-                        ? 'text-white drop-shadow-lg animate-spin' 
-                        : 'group-hover:text-white group-hover:scale-110'
-                    }`} style={activeTab === tab.id ? {animationDuration: '3s'} : {}} />
+                  {/* Animated background particles */}
+                  <div className="absolute inset-0 overflow-hidden rounded-3xl">
+                    <div className={`absolute -top-2 -left-2 w-4 h-4 bg-white/20 rounded-full animate-bounce ${activeTab === tab.id ? 'block' : 'hidden'}`} style={{animationDelay: '0s', animationDuration: '2s'}}></div>
+                    <div className={`absolute -top-1 -right-3 w-3 h-3 bg-white/30 rounded-full animate-bounce ${activeTab === tab.id ? 'block' : 'hidden'}`} style={{animationDelay: '0.5s', animationDuration: '2.5s'}}></div>
+                    <div className={`absolute -bottom-2 -right-1 w-2 h-2 bg-white/40 rounded-full animate-bounce ${activeTab === tab.id ? 'block' : 'hidden'}`} style={{animationDelay: '1s', animationDuration: '3s'}}></div>
                   </div>
                   
-                  {/* Text with gradient effect */}
-                  <span className={`relative z-10 font-bold tracking-wide transition-all duration-500 ${
+                  {/* Glowing icon container */}
+                  <div className={`relative z-10 p-3 rounded-2xl transition-all duration-500 ${
                     activeTab === tab.id
-                      ? 'text-white drop-shadow-md'
-                      : 'group-hover:text-white'
-                  }`}>
+                      ? 'bg-white/30 animate-spin shadow-lg'
+                      : 'bg-white/20 group-hover:bg-white/30 group-hover:animate-pulse'
+                  }`} style={activeTab === tab.id ? {animationDuration: '4s'} : {}}>
+                    <Icon className={`h-7 w-7 transition-all duration-500 drop-shadow-lg ${
+                      activeTab === tab.id 
+                        ? 'text-white animate-pulse' 
+                        : 'text-white group-hover:scale-125 group-hover:animate-bounce'
+                    }`} />
+                  </div>
+                  
+                  {/* Enhanced text with glow effect */}
+                  <span className={`relative z-10 font-extrabold text-xl tracking-wider transition-all duration-500 ${
+                    activeTab === tab.id
+                      ? 'text-white drop-shadow-lg'
+                      : 'text-white group-hover:drop-shadow-lg'
+                  }`} style={{
+                    textShadow: activeTab === tab.id 
+                      ? '0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6)' 
+                      : '0 0 10px rgba(255, 255, 255, 0.5)'
+                  }}>
                     {tab.label}
                   </span>
                   
-                  {/* Active indicator */}
+                  {/* Pulsing indicator */}
                   {activeTab === tab.id && (
-                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-white rounded-full animate-pulse"></div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-2 bg-white rounded-full animate-pulse shadow-lg" style={{
+                      boxShadow: '0 0 20px rgba(255, 255, 255, 0.8)'
+                    }}></div>
                   )}
                   
-                  {/* Hover sparkle effect */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="absolute top-2 right-3 w-1 h-1 bg-white rounded-full animate-ping" style={{animationDelay: '0s'}}></div>
-                    <div className="absolute top-4 right-5 w-1 h-1 bg-white rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
-                    <div className="absolute bottom-3 right-2 w-1 h-1 bg-white rounded-full animate-ping" style={{animationDelay: '1s'}}></div>
-                  </div>
-                </button>
+                  {/* Hover glow effect */}
+                  <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                    activeTab === tab.id ? 'opacity-100' : ''
+                  }`} style={{
+                    background: 'linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%)',
+                    backgroundSize: '200% 200%',
+                    animation: activeTab === tab.id ? 'shimmer 3s ease-in-out infinite' : 'none'
+                  }}></div>
+                </motion.button>
               );
             })}
           </nav>
+          
+          {/* Add shimmer keyframes */}
+          <style jsx>{`
+            @keyframes shimmer {
+              0% { background-position: -200% 0; }
+              100% { background-position: 200% 0; }
+            }
+          `}</style>
         </div>
 
         {/* Quick Actions - Show only on chat tab */}
