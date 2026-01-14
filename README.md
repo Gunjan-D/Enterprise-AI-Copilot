@@ -28,14 +28,14 @@ A sophisticated Microsoft Stack-powered AI assistant designed for enterprise wor
 - **Render**: One-click deployment from GitHub
 - **GitHub Pages**: Use `npm run export` for static deployment
 
-## ✨ Features
+## Features
 
 ### Core Capabilities
-- **🤖 Conversational AI Interface**: Natural language processing for complex workflow requests
-- **⚡ Intelligent Workflow Automation**: Power Automate integration for business process automation
-- **📊 Real-time Analytics Dashboard**: Comprehensive metrics and usage insights
-- **👥 Enterprise User Management**: Role-based access control and user activity tracking
-- **🔐 Microsoft 365 Integration**: Seamless connectivity with Teams, SharePoint, Outlook, and OneDrive
+- ** Conversational AI Interface**: Natural language processing for complex workflow requests
+- ** Intelligent Workflow Automation**: Power Automate integration for business process automation
+- ** Real-time Analytics Dashboard**: Comprehensive metrics and usage insights
+- ** Enterprise User Management**: Role-based access control and user activity tracking
+- ** Microsoft 365 Integration**: Seamless connectivity with Teams, SharePoint, Outlook, and OneDrive
 
 ### Technical Highlights
 - **Azure OpenAI Integration**: GPT-powered intelligent response generation
@@ -51,7 +51,7 @@ A sophisticated Microsoft Stack-powered AI assistant designed for enterprise wor
 4. **Employee Onboarding**: Complete automation of new hire processes
 5. **Document Workflows**: Automated approval and routing systems
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **Next.js 14** with App Router and TypeScript
@@ -73,7 +73,7 @@ A sophisticated Microsoft Stack-powered AI assistant designed for enterprise wor
 - **Azure Active Directory**: Authentication and user management
 - **Microsoft 365**: Complete productivity suite integration
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+ 
