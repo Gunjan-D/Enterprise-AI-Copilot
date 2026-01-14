@@ -2,9 +2,31 @@
 
 A sophisticated Microsoft Stack-powered AI assistant designed for enterprise workflow automation. This project demonstrates advanced integration with Azure OpenAI, Microsoft 365 services, Power Automate, and modern web technologies.
 
-## 🚀 Live Demo
+## 🌐 Live Demo
 
-Experience the full functionality at `http://localhost:3000` after setup.
+**[🔗 View Live Application](https://your-app-name.vercel.app)** *(Live link will be updated after deployment)*
+
+> **Quick Setup**: Experience full functionality locally at `http://localhost:3000`
+
+## 🚀 Deploy Your Own
+
+### Option 1: Vercel (Recommended - Free & Easy)
+1. **Fork this repository** to your GitHub account
+2. **Visit [vercel.com](https://vercel.com)** and sign up with GitHub
+3. **Click "New Project"** and import your forked repository
+4. **Deploy** - Vercel will automatically build and deploy!
+5. **Get your live URL** (e.g., `https://enterprise-ai-copilot-abc123.vercel.app`)
+6. **Update the README** with your live link
+
+### Option 2: Netlify
+1. **Visit [netlify.com](https://netlify.com)** and connect your GitHub
+2. **Select your repository** and deploy
+3. **Configure build**: `npm run build` with publish directory `out`
+
+### Option 3: Other Platforms
+- **Railway**: Connect GitHub repo and deploy
+- **Render**: One-click deployment from GitHub
+- **GitHub Pages**: Use `npm run export` for static deployment
 
 ## ✨ Features
 
