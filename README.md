@@ -2,40 +2,18 @@
 
 A sophisticated Microsoft Stack-powered AI assistant designed for enterprise workflow automation. This project demonstrates advanced integration with Azure OpenAI, Microsoft 365 services, Power Automate, and modern web technologies.
 
-## 🌐 Live Demo
+## 🚀 Live Demo
 
-**[🔗 View Live Application](https://your-app-name.vercel.app)** *(Live link will be updated after deployment)*
+Experience the full functionality at `http://localhost:3000` after setup.
 
-> **Quick Setup**: Experience full functionality locally at `http://localhost:3000`
-
-## 🚀 Deploy Your Own
-
-### Option 1: Vercel (Recommended - Free & Easy)
-1. **Fork this repository** to your GitHub account
-2. **Visit [vercel.com](https://vercel.com)** and sign up with GitHub
-3. **Click "New Project"** and import your forked repository
-4. **Deploy** - Vercel will automatically build and deploy!
-5. **Get your live URL** (e.g., `https://enterprise-ai-copilot-abc123.vercel.app`)
-6. **Update the README** with your live link
-
-### Option 2: Netlify
-1. **Visit [netlify.com](https://netlify.com)** and connect your GitHub
-2. **Select your repository** and deploy
-3. **Configure build**: `npm run build` with publish directory `out`
-
-### Option 3: Other Platforms
-- **Railway**: Connect GitHub repo and deploy
-- **Render**: One-click deployment from GitHub
-- **GitHub Pages**: Use `npm run export` for static deployment
-
-## Features
+## ✨ Features
 
 ### Core Capabilities
-- ** Conversational AI Interface**: Natural language processing for complex workflow requests
-- ** Intelligent Workflow Automation**: Power Automate integration for business process automation
-- ** Real-time Analytics Dashboard**: Comprehensive metrics and usage insights
-- ** Enterprise User Management**: Role-based access control and user activity tracking
-- ** Microsoft 365 Integration**: Seamless connectivity with Teams, SharePoint, Outlook, and OneDrive
+- **🤖 Conversational AI Interface**: Natural language processing for complex workflow requests
+- **⚡ Intelligent Workflow Automation**: Power Automate integration for business process automation
+- **📊 Real-time Analytics Dashboard**: Comprehensive metrics and usage insights
+- **👥 Enterprise User Management**: Role-based access control and user activity tracking
+- **🔐 Microsoft 365 Integration**: Seamless connectivity with Teams, SharePoint, Outlook, and OneDrive
 
 ### Technical Highlights
 - **Azure OpenAI Integration**: GPT-powered intelligent response generation
@@ -51,7 +29,7 @@ A sophisticated Microsoft Stack-powered AI assistant designed for enterprise wor
 4. **Employee Onboarding**: Complete automation of new hire processes
 5. **Document Workflows**: Automated approval and routing systems
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 ### Frontend
 - **Next.js 14** with App Router and TypeScript
@@ -73,7 +51,7 @@ A sophisticated Microsoft Stack-powered AI assistant designed for enterprise wor
 - **Azure Active Directory**: Authentication and user management
 - **Microsoft 365**: Complete productivity suite integration
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js 18+ 
