@@ -129,21 +129,59 @@ const CopilotDashboard = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Navigation Tabs */}
         <div className="mb-8">
-          <nav className="flex space-x-8">
+          <nav className="flex space-x-2">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               return (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center space-x-2 px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  className={`group relative flex items-center space-x-3 px-6 py-4 text-sm font-bold rounded-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-2xl ${
                     activeTab === tab.id
-                      ? 'bg-blue-100 text-blue-700'
-                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
+                      ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 text-white shadow-2xl animate-pulse'
+                      : 'bg-gradient-to-r from-slate-100 to-slate-200 text-slate-700 hover:from-blue-500 hover:via-purple-500 hover:to-cyan-500 hover:text-white border-2 border-transparent hover:border-white/30'
                   }`}
                 >
-                  <Icon className="h-4 w-4" />
-                  <span>{tab.label}</span>
+                  {/* Animated background glow */}
+                  <div className={`absolute inset-0 rounded-2xl transition-all duration-500 ${
+                    activeTab === tab.id 
+                      ? 'bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 animate-ping' 
+                      : 'opacity-0 group-hover:opacity-100 bg-gradient-to-r from-blue-400/10 via-purple-400/10 to-cyan-400/10'
+                  }`}></div>
+                  
+                  {/* Icon with dynamic effects */}
+                  <div className={`relative z-10 p-2 rounded-xl transition-all duration-500 ${
+                    activeTab === tab.id
+                      ? 'bg-white/20 animate-bounce'
+                      : 'group-hover:bg-white/20 group-hover:animate-pulse'
+                  }`} style={activeTab === tab.id ? {animationDuration: '2s'} : {}}>
+                    <Icon className={`h-5 w-5 transition-all duration-500 ${
+                      activeTab === tab.id 
+                        ? 'text-white drop-shadow-lg animate-spin' 
+                        : 'group-hover:text-white group-hover:scale-110'
+                    }`} style={activeTab === tab.id ? {animationDuration: '3s'} : {}} />
+                  </div>
+                  
+                  {/* Text with gradient effect */}
+                  <span className={`relative z-10 font-bold tracking-wide transition-all duration-500 ${
+                    activeTab === tab.id
+                      ? 'text-white drop-shadow-md'
+                      : 'group-hover:text-white'
+                  }`}>
+                    {tab.label}
+                  </span>
+                  
+                  {/* Active indicator */}
+                  {activeTab === tab.id && (
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-white rounded-full animate-pulse"></div>
+                  )}
+                  
+                  {/* Hover sparkle effect */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="absolute top-2 right-3 w-1 h-1 bg-white rounded-full animate-ping" style={{animationDelay: '0s'}}></div>
+                    <div className="absolute top-4 right-5 w-1 h-1 bg-white rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
+                    <div className="absolute bottom-3 right-2 w-1 h-1 bg-white rounded-full animate-ping" style={{animationDelay: '1s'}}></div>
+                  </div>
                 </button>
               );
             })}

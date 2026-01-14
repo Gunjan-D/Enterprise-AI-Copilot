@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[82590,["/Enterprise-AI-Copilot/_next/static/chunks/cbb9eb39c2ac9a61.js"],"default"]
 3:I[83424,["/Enterprise-AI-Copilot/_next/static/chunks/cbb9eb39c2ac9a61.js"],"default"]
-0:{"buildId":"vhJ1VMzGBBAbvCp2DzWhB","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"vGxZyF8mOpGGFgTOzWl_t","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
