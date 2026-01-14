@@ -2,18 +2,18 @@
 
 A sophisticated Microsoft Stack-powered AI assistant designed for enterprise workflow automation. This project demonstrates advanced integration with Azure OpenAI, Microsoft 365 services, Power Automate, and modern web technologies.
 
-## 🚀 Live Demo
+## Live Demo
 
 Experience the full functionality at `http://localhost:3000` after setup.
 
-## ✨ Features
+## Features
 
 ### Core Capabilities
-- **🤖 Conversational AI Interface**: Natural language processing for complex workflow requests
-- **⚡ Intelligent Workflow Automation**: Power Automate integration for business process automation
-- **📊 Real-time Analytics Dashboard**: Comprehensive metrics and usage insights
-- **👥 Enterprise User Management**: Role-based access control and user activity tracking
-- **🔐 Microsoft 365 Integration**: Seamless connectivity with Teams, SharePoint, Outlook, and OneDrive
+- ** Conversational AI Interface**: Natural language processing for complex workflow requests
+- ** Intelligent Workflow Automation**: Power Automate integration for business process automation
+- ** Real-time Analytics Dashboard**: Comprehensive metrics and usage insights
+- ** Enterprise User Management**: Role-based access control and user activity tracking
+- ** Microsoft 365 Integration**: Seamless connectivity with Teams, SharePoint, Outlook, and OneDrive
 
 ### Technical Highlights
 - **Azure OpenAI Integration**: GPT-powered intelligent response generation
@@ -29,7 +29,7 @@ Experience the full functionality at `http://localhost:3000` after setup.
 4. **Employee Onboarding**: Complete automation of new hire processes
 5. **Document Workflows**: Automated approval and routing systems
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **Next.js 14** with App Router and TypeScript
@@ -51,7 +51,7 @@ Experience the full functionality at `http://localhost:3000` after setup.
 - **Azure Active Directory**: Authentication and user management
 - **Microsoft 365**: Complete productivity suite integration
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+ 
