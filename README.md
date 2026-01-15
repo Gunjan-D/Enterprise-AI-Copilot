@@ -169,7 +169,7 @@ src/
 - **Power Automate**: Workflow orchestration platform
 - **Azure Active Directory**: Identity and access management
 
-## 📈 Enterprise Benefits
+## Enterprise Benefits
 
 ### Productivity Gains
 - **80% reduction** in manual report generation time
@@ -206,7 +206,7 @@ npm run type-check   # TypeScript validation
 - **Prettier**: Automated code formatting
 - **Husky**: Pre-commit hooks for quality assurance
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -214,18 +214,15 @@ npm run type-check   # TypeScript validation
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🔗 Related Projects
+## Related Projects
 
 - [Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript)
 - [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/)
 - [Power Automate](https://powerautomate.microsoft.com/)
 - [Next.js Documentation](https://nextjs.org/docs)
 
-## 📞 Support
+## Support
 
 For support and questions:
 - Create an issue in this repository
