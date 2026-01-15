@@ -214,21 +214,4 @@ npm run type-check   # TypeScript validation
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-
-## Related Projects
-
-- [Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript)
-- [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/)
-- [Power Automate](https://powerautomate.microsoft.com/)
-- [Next.js Documentation](https://nextjs.org/docs)
-
-## Support
-
-For support and questions:
-- Create an issue in this repository
-- Check the [Microsoft Graph documentation](https://docs.microsoft.com/en-us/graph/)
-- Review [Azure OpenAI documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/openai/)
-
----
-
 **Built with ❤️ for enterprise productivity and Microsoft ecosystem integration**
