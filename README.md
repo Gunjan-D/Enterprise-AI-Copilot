@@ -15,14 +15,14 @@ Experience the complete Enterprise AI Copilot application fully deployed and acc
 
 *The application is fully deployed and publicly accessible - no setup or installation required!*
 
-## ✨ Features
+## Features
 
 ### Core Capabilities
-- **🤖 Conversational AI Interface**: Natural language processing for complex workflow requests
-- **⚡ Intelligent Workflow Automation**: Power Automate integration for business process automation
-- **📊 Real-time Analytics Dashboard**: Comprehensive metrics and usage insights
-- **👥 Enterprise User Management**: Role-based access control and user activity tracking
-- **🔐 Microsoft 365 Integration**: Seamless connectivity with Teams, SharePoint, Outlook, and OneDrive
+- **Conversational AI Interface**: Natural language processing for complex workflow requests
+- **Intelligent Workflow Automation**: Power Automate integration for business process automation
+- ** Real-time Analytics Dashboard**: Comprehensive metrics and usage insights
+- ** Enterprise User Management**: Role-based access control and user activity tracking
+- ** Microsoft 365 Integration**: Seamless connectivity with Teams, SharePoint, Outlook, and OneDrive
 
 ### Technical Highlights
 - **Azure OpenAI Integration**: GPT-powered intelligent response generation
