@@ -2,7 +2,7 @@
 
 A sophisticated Microsoft Stack-powered AI assistant designed for enterprise workflow automation. This project demonstrates advanced integration with Azure OpenAI, Microsoft 365 services, Power Automate, and modern web technologies.
 
-## 🚀 Live Demo
+## Live Demo
 
 **[🌐 Access Live Demo](https://gunjan-d.github.io/Enterprise-AI-Copilot/)**
 
