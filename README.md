@@ -214,4 +214,3 @@ npm run type-check   # TypeScript validation
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-**Built with ❤️ for enterprise productivity and Microsoft ecosystem integration**
